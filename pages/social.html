@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Landing Page - Tuniee Social</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add your global styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Your specific styles for header, hero, about, features, testimonials, contact, and footer go here */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4285f4; /* Google Blue for header */
+    color: #fff;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: linear-gradient(to right, rgba(66, 133, 244, 0.7), transparent), url(/pages/images/tti-11.svg); /* Google Blue for background */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff; /* White text color for better readability on the background image */
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #f8f8f8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4285f4; /* Google Blue for the button */
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3367d6; /* Slightly darker shade of Google Blue on hover */
+}
+
+.about {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.features {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.features h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.feature img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.testimonials {
+    text-align: center;
+    background-color: rgba(66, 133, 244, 0.7); /* Transparent Google Blue for testimonials */
+    padding: 40px 0;
+}
+
+.testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.testimonial img {
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.contact {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Move buttons in the footer to the right */
+#footer-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer-links button {
+    margin-left: 10px;
+}
+
+.a-footer {
+    text-decoration: none;
+}
+
+/* Adjust testimonial blockquote styles for better readability */
+.testimonial blockquote {
+    font-style: italic;
+    color: #fff; /* White color for testimonials text */
+    margin-bottom: 10px;
+    line-height: 1.6; /* Increase line-height for better spacing */
+}
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Join the Tuniee Social Network</h1>
+                <p>Connect with friends, share your life, and discover new experiences with Tuniee Social.</p>
+                <a href="#" class="btn">Sign Up Now</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Tuniee Social</h2>
+                <p>Tuniee Social is a vibrant social network that brings people together. Our platform offers a range of features to help you stay connected with your friends and explore exciting new content.</p>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="feature">
+                    <h3>Profile Customization</h3>
+                    <p>Create a unique profile that represents you. Customize your profile picture, cover photo, and more.</p>
+                </div>
+                <div class="feature">
+                    <h3>News Feed</h3>
+                    <p>Stay updated with your friends' latest posts and share your own updates on your news feed.</p>
+                </div>
+                <div class="feature">
+                    <h3>Groups and Communities</h3>
+                    <p>Join or create groups based on your interests and engage with like-minded individuals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>What Our Users Say</h2>
+                <div class="testimonial">
+                    <blockquote>"Tuniee Social is the best social network I've used. I've connected with so many amazing people here."</blockquote>
+                    <p>- user1</p>
+                </div>
+                <div class="testimonial">
+                    <blockquote>"I love the community feel of Tuniee Social. It's like having a big family online."</blockquote>
+                    <p>- user2</p>
+                </div>
+                <div class="testimonial">
+                    <blockquote>"The features on Tuniee Social are fantastic. It's everything I need in a social platform."</blockquote>
+                    <p>- user3</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Email: elicheant@gmail.com.com</p>
+                <p>Phone: +2347062566900</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="contact-footer" class="container">
+            <p>Contact us: elicheant@gmail.com | Phone: +2347062566900</p>
+            <p>&copy; 2023 Tuniee Social | Elikwu Chekwube Anthony</p>
+        </div>
+        <div id="footer-links" class="footer-links">
+            <button>
+                <a class="a-footer" href="#">Back to Top</a>
+            </button>
+            <button>
+                <a class="a-footer" href="/index.html">Back to Main</a>
+            </button>    
+        </div>
+    </footer>
+</body>
+</html>
