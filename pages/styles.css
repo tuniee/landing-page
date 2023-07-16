@@ -123,34 +123,12 @@ header nav ul li a {
     margin: 0 auto;
 }
 
-button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: whitesmoke; /* Royal blue for buttons */
-    color: #fff;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+.contact {
+    text-align: center;
+    padding: 40px 0;
 }
 
-/* Move buttons in the footer to the right */
-#footer-links {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#footer-links button {
-    margin-left: 10px;
-}
-
-.a-footer {
-    text-decoration: none;
-}
-
-/* Adjust testimonial blockquote styles for better readability */
-.testimonial blockquote {
-    font-style: italic;
-    color: #fff; /* White color for testimonials text */
-    margin-bottom: 10px;
-    line-height: 1.6; /* Increase line-height for better spacing */
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
